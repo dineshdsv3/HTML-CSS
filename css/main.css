@@ -28,6 +28,22 @@ h1 {
   color: blue;
 }
 
+.button, .jumbo-button, .light-button {
+  color: #ffffff;
+  padding: 5px;
+  background: green;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.jumbo-button {
+  padding: 15px;
+}
+
+.light-button {
+  background-color: #00c000;
+}
+
 p {
   font-size: 24px;
   color: #16a085;

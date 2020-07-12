@@ -5,17 +5,30 @@ $primary-color: green;
 $bg-color: #2c3e50;
 $hover-color: #16a085;
 $text-color: #ffffff;
-
-@mixin panel-radius($radius) {
-    -webkit-border-radius: $radius;
-    -ms-border-radius: $radius;
-    -moz-border-radius: $radius;
-    border-radius: $radius;
-}
-
+$buttonColor: #ffffff;
+$buttonPadding:5px;
+$buttonBackground: green;
 
 h1 {
     color: blue;
+}
+
+.button {
+    color:$buttonColor;
+    padding: $buttonPadding;
+    background: $buttonBackground;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.jumbo-button {
+    @extend .button;
+    padding: $buttonPadding + 10px;
+}
+
+.light-button {
+    @extend .button;
+    background-color: $buttonBackground * 1.5;
 }
 
 p {
