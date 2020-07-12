@@ -6,6 +6,14 @@ $bg-color: #2c3e50;
 $hover-color: #16a085;
 $text-color: #ffffff;
 
+@mixin panel-radius($radius) {
+    -webkit-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+
 h1 {
     color: blue;
 }

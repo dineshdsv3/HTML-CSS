@@ -1,3 +1,10 @@
+@mixin panel-radius($radius) {
+    -webkit-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
 .panel{
     background-color:orange;
     border: 2px solid #008877;
@@ -7,12 +14,14 @@
 
 .small-panel {
     @extend .panel;
+    @include panel-radius(10px);
     font-size: 12px;
     color: black;
 }
 
 .big-panel {
     @extend .panel;
+    @include panel-radius(20px);
     font-size: 32px;
     color: blue;
 }
