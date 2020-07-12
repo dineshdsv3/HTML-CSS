@@ -1,5 +1,34 @@
+.profile-image {
+  border-radius: 999px;
+  height: 200px;
+  width: 200px;
+  border: 5px solid seagreen;
+}
+
+.panel, .small-panel, .big-panel {
+  background-color: orange;
+  border: 2px solid #008877;
+  padding: 5px;
+  margin: 10px;
+}
+
+.small-panel {
+  font-size: 12px;
+  color: black;
+}
+
+.big-panel {
+  font-size: 32px;
+  color: blue;
+}
+
 h1 {
   color: blue;
+}
+
+p {
+  font-size: 24px;
+  color: #16a085;
 }
 
 nav ul {

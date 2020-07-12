@@ -1,0 +1,18 @@
+.panel{
+    background-color:orange;
+    border: 2px solid #008877;
+    padding: 5px;
+    margin: 10px;
+}
+
+.small-panel {
+    @extend .panel;
+    font-size: 12px;
+    color: black;
+}
+
+.big-panel {
+    @extend .panel;
+    font-size: 32px;
+    color: blue;
+}
