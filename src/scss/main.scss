@@ -1,0 +1,23 @@
+/*
+Hq Admin theme
+*/
+
+// Bootstrap
+@import "_vars.scss";
+@import "_customize.bootstrap.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Fonts
+$fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+
+
+// App Layout
+@import 'app/components/app';
+@import 'app/components/app-header';
+@import 'app/components/app-sidebar';
+@import 'app/components/app-sidebar-mini';
+@import 'app/components/app-title';
