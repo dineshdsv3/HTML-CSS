@@ -11824,6 +11824,13 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
 
+.app-content {
+  outline: 1px solid red;
+  margin-top: 50px;
+  padding: 30px;
+  background-color: #e5e5e5;
+  margin-left: 230px; }
+
 .app-header {
   position: fixed;
   left: 0;
@@ -11867,4 +11874,29 @@ readers do not read off random characters that represent icons */
   color: rgba(0, 0, 0, 0.8);
   background: none;
   cursor: pointer; }
+
+.app-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding-top: 70px;
+  width: 230px;
+  overflow: auto;
+  z-index: 10;
+  background-color: #2a4f69;
+  box-shadow: 0px 8px 17px black; }
+
+.app-menu {
+  margin-bottom: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.app-menu__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  border-left: 2px solid transparent; }
 
