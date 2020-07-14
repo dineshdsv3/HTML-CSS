@@ -501,9 +501,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var boot
   !*** ./src/js/custom.js ***!
   \**************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("\n\n//# sourceURL=webpack:///./src/js/custom.js?");
+eval("/* WEBPACK VAR INJECTION */(function($) {(function(){\n    \"use strict\";\n    $('[data-toggle=\"sidebar\"]').click(function(event) {\n        event.preventDefault();\n        $('.app').toggleClass('sidebar-toggled')\n    })\n})();\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./src/js/custom.js?");
 
 /***/ }),
 
@@ -512,9 +512,9 @@ eval("\n\n//# sourceURL=webpack:///./src/js/custom.js?");
   !*** ./src/scss/main.scss ***!
   \****************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("throw new Error(\"Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\\nSassError: Incompatible units: 'px' and 'vh'.\\n        on line 3 of src/scss/app/components/_app.scss\\n        from line 19 of src/scss/main.scss\\n>>     min-height: cal(100vh - 50px);\\n\\n   --------------------^\\n\\n    at runLoaders (/media/dinesh/Workstations/Web Designing/FrontEndPractice/node_modules/webpack/lib/NormalModule.js:316:20)\\n    at /media/dinesh/Workstations/Web Designing/FrontEndPractice/node_modules/loader-runner/lib/LoaderRunner.js:367:11\\n    at /media/dinesh/Workstations/Web Designing/FrontEndPractice/node_modules/loader-runner/lib/LoaderRunner.js:233:18\\n    at context.callback (/media/dinesh/Workstations/Web Designing/FrontEndPractice/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\\n    at Object.render [as callback] (/media/dinesh/Workstations/Web Designing/FrontEndPractice/node_modules/sass-loader/dist/index.js:55:7)\\n    at Object.done [as callback] (/media/dinesh/Workstations/Web Designing/FrontEndPractice/node_modules/neo-async/async.js:8069:18)\\n    at options.error (/media/dinesh/Workstations/Web Designing/FrontEndPractice/node_modules/node-sass/lib/index.js:294:32)\");\n\n//# sourceURL=webpack:///./src/scss/main.scss?");
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/scss/main.scss?");
 
 /***/ }),
 

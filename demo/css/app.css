@@ -11825,11 +11825,14 @@ readers do not read off random characters that represent icons */
   font-weight: 900; }
 
 .app-content {
-  outline: 1px solid red;
   margin-top: 50px;
   padding: 30px;
   background-color: #e5e5e5;
-  margin-left: 230px; }
+  margin-left: 230px;
+  transition: margin-left 0.3s ease; }
+  @media (max-width: 767px) {
+    .app-content {
+      margin-left: 0; } }
 
 .app-header {
   position: fixed;
@@ -11850,6 +11853,11 @@ readers do not read off random characters that represent icons */
   font-size: 26px;
   padding: 0 15px;
   line-height: 50px; }
+  @media (min-width: 768px) {
+    .app-header__logo {
+      flex: 0 0 auto;
+      display: block;
+      width: 230px; } }
 
 .app-search {
   position: relative;
@@ -11857,6 +11865,9 @@ readers do not read off random characters that represent icons */
   align-self: center;
   margin-right: 15px;
   padding: 0; }
+  @media (max-width: 480px) {
+    .app-search {
+      display: none; } }
 
 .app-search__input {
   border: 0;
@@ -11875,6 +11886,42 @@ readers do not read off random characters that represent icons */
   background: none;
   cursor: pointer; }
 
+.app-nav {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  margin-bottom: 0;
+  justify-content: flex-end; }
+  @media (min-width: 768px) {
+    .app-nav {
+      flex: 1 0 auto; } }
+
+.app-nav__item {
+  display: block;
+  padding: 20px;
+  line-height: 18px;
+  color: #fff;
+  transition: background-color 0.3s ease; }
+  .app-nav__item:hover, .app-nav__item:focus {
+    background-color: rgba(0, 0, 0, 0.1); }
+
+.app-siderbar__toggle {
+  padding: 0 15px;
+  color: #fff;
+  line-height: 50px;
+  transition: background-color 0.3s ease; }
+  .app-siderbar__toggle:hover, .app-siderbar__toggle:focus {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.1);
+    text-decoration: none; }
+  @media (max-width: 767px) {
+    .app-siderbar__toggle {
+      order: -1; } }
+
+.app-siderbar__toggle > span {
+  display: inline-block;
+  padding: 15px; }
+
 .app-sidebar {
   position: fixed;
   top: 0;
@@ -11885,7 +11932,11 @@ readers do not read off random characters that represent icons */
   overflow: auto;
   z-index: 10;
   background-color: #2a4f69;
-  box-shadow: 0px 8px 17px black; }
+  box-shadow: 0px 8px 17px black;
+  transition: left 0.3s ease, width 0.3s ease; }
+  @media (max-width: 767px) {
+    .app-sidebar {
+      width: 0; } }
 
 .app-menu {
   margin-bottom: 0;
@@ -11899,4 +11950,7 @@ readers do not read off random characters that represent icons */
   align-items: center;
   padding: 12px 15px;
   border-left: 2px solid transparent; }
+
+.app.sidebar-toggled .app-sidebar {
+  width: 230px; }
 

@@ -9,6 +9,10 @@
     z-index: 10;
     background-color: $sidebar-color;
     box-shadow: 0px 8px 17px rgba(0,0,0,1.2);
+    transition: left 0.3s ease, width 0.3s ease;
+    @media (max-width:767px) {
+       width:0;
+    }
 }
 
 .app-menu{
@@ -23,4 +27,8 @@
     align-items: center;
     padding: 12px 15px;
     border-left: 2px solid transparent;
+}
+
+.app.sidebar-toggled .app-sidebar{
+    width: 230px;
 }
