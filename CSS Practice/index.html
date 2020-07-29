@@ -1,24 +1,44 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First page</title>
-    <link rel="stylesheet" href="./main.css" type="text/css">
-</head>
-<body>
-    <div class="container">
-        <div class="container-item">A</div>
-        <div class="container-item">B</div>
-        <div class="container-item">C</div>
-        <div class="container-item">D</div>
-        <div class="container-item">E</div>
-    </div>
-    <div class="container1">
-        <div class="container1-item">A</div>
-        <div class="container1-item">B</div>
-        <div class="container1-item">C</div>
-        <div class="container1-item">D</div>
-        <div class="container1-item">E</div>
-    </div>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>First page</title>
+		<link rel="stylesheet" href="./main.css" type="text/css" />
+	</head>
+	<body>
+		<!-- Flexbox -->
+		<div class="container">
+			<div class="container-item">A</div>
+			<div class="container-item">B</div>
+			<div class="container-item">C</div>
+			<div class="container-item">D</div>
+			<div class="container-item">E</div>
+		</div>
+		<!-- <div class="container1">
+			<div class="container1-item">A</div>
+			<div class="container1-item">B</div>
+			<div class="container1-item">C</div>
+			<div class="container1-item">D</div>
+			<div class="container1-item">E</div>
+		</div> -->
+		<!-- End of flex box -->
+		<!-- Grid container -->
+		<div class="grid-container">
+			<div
+				class="grid-item"
+                style="background: rgb(255, 150, 150); 
+                /* grid-column: 1 / span 2; 
+                grid-row: 1 / span 2; */
+                grid-area: 2 / 1 / span 2 / span 2"
+			>
+				1
+			</div>
+			<div class="grid-item" style="background: rgb(170, 255, 140);">2</div>
+			<div class="grid-item" style="background: rgb(222, 132, 255);">3</div>
+			<div class="grid-item" style="background: rgb(255, 207, 119);">4</div>
+			<div class="grid-item" style="background: rgb(140, 210, 255);">5</div>
+			<div class="grid-item" style="background: rgb(202, 84, 90);">6</div>
+		</div>
+		<!-- End of Grid container -->
+	</body>
 </html>
